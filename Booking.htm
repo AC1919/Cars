@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS.com</title>
+    <link rel="stylesheet" href="Booking.css">
+</head>
+<body>
+    <div class="navigate">
+        <nav>
+            <a href="homepage.htm" style="font-size: 180%;" class="nav-button">Home</a>
+            <a href="showroom.htm" style="font-size: 180%;" class="nav-button">Showroom</a>
+            <a href="Booking.htm" style="font-size: 180%;" class="nav-button">Book A Drive</a>
+            <a href="about.htm" style="font-size: 180%;" class="nav-button">About</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Book a Test Drive</h1>
+        <form class="test-drive-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" required>
+            </div>
+            <button type="submit">Schedule Test Drive</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background-color: black; /* Overall black background */
+    color: whitesmoke; /* Default text color */
+    font-family: Arial, sans-serif; /* Font for the body */
+}
+
+.navigate nav {
+    padding-top: 25px;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    perspective: 1000px; 
+}
+
+.nav-button:active {
+    transform: perspective(1000px) translateZ(-20px) rotateX(15deg) rotateY(-10deg);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 600px; /* Fixed width for the container */
+    margin: 50px auto; /* Center horizontally and add margin from top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h1 {
+    color: white; /* White text for the heading */
+    text-align: center;
+    margin-bottom: 20px; /* Space below heading */
+}
+
+p {
+    color: white; /* White text for paragraphs */
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+    opacity: 0; /* Initially hidden for animation */
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards; /* Apply fade-in effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

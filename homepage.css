@@ -1,0 +1,63 @@
+body{
+    margin:0%;
+    background-color: black;
+}
+.navigate nav{
+    padding-top:25px;
+    text-align: center;
+    word-spacing: 20px;
+}
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey;
+    color: black;
+    text-decoration:none;
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    perspective: 1000px; 
+}
+
+.nav-button:active {
+    transform: perspective(1000px) translateZ(-20px) rotateX(15deg) rotateY(-10deg);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+.tagline-container {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: whitesmoke;
+    perspective: 1000px; /* Adds a 3D perspective */
+    display: inline-block;
+}
+
+.tagline-text {
+    padding: 10px;
+    display: inline-block;
+    white-space: nowrap; /* Keeps text on a single line */
+    overflow: hidden;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    animation: blink-cursor 0.7s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+.text {
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 50%;
+    text-align: right;
+    background-color: green; /* Sets the background color to green */
+    padding: 10px; /* Adds some space around the text inside the box */
+    border-radius: 5px; /* Optional: Rounds the corners of the box */
+    width: 200px; /* Adjusts the width of the box */
+    margin-left: auto; /* Pushes the box to the right side */
+}
